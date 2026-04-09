@@ -8,6 +8,7 @@
     'depends': ['sale'],
     'data': [
         "views/sale_order_view.xml",
+        "security/security.xml",
     ],
     'installable': True,
     'application': False,
