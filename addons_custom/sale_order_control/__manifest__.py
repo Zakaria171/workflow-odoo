@@ -6,7 +6,10 @@
     'author': 'workflow_odoo',
     'license': 'LGPL-3',
     'depends': ['sale'],
-    'data': [],
+    'data': [
+        "views/sale_order_view.xml",
+        "security/security.xml",
+    ],
     'installable': True,
     'application': False,
     'auto_install': False,
