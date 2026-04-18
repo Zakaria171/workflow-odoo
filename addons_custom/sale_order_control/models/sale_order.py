@@ -12,7 +12,7 @@ class SaleOrder(models.Model):
         Vérifier les droits de l'utilisateur pour gérer l'état de la promotion
         """
         if not self.env.user.has_group('sale_order_control.group_sale_order_promotion_manager'):
-            raise UserError("Vous n’êtes pas autorisé à modifier l’état de promotion de cette commande.")
+            raise UserError("Vous n'êtes pas autorisé à modifier l'état de promotion de cette commande.")
 
     @api.model
     def create(self, vals):
