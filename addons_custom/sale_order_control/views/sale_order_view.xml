@@ -5,8 +5,8 @@
         <field name="inherit_id" ref="sale.view_order_form"/>
         <field name="arch" type="xml">
             <xpath expr="//field[@name='payment_term_id']" position="after">
-                <field name="promo_active" groups="sale_order_control.group_sale_order_promotion_manager"/>
-                <field name="promo_active" readonly="1" groups="!sale_order_control.group_sale_order_promotion_manager"/>
+                <field name="promo_active" groups="sale_order_control.group_sale_order_manager"/>
+                <field name="promo_active" readonly="1" groups="!sale_order_control.group_sale_order_manager"/>
             </xpath>
         </field>
     </record>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="group_sale_order_commercial" model="res.groups">
+        <field name="name">Commercial Commandes</field>
+    </record>
+
+    <record id="group_sale_order_manager" model="res.groups">
+        <field name="name">Manager Commandes</field>
+        <field name="implied_ids" eval="[(4, ref('sale_order_control.group_sale_order_commercial'))]"/>
+    </record>
+</odoo>
