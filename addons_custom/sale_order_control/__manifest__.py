@@ -8,7 +8,9 @@
     'depends': ['sale'],
     'data': [
         "views/sale_order_view.xml",
-        "security/security.xml",
+        "security/groups.xml",
+        "security/rules.xml",
+        "security/ir.model.access.csv",
     ],
     'installable': True,
     'application': False,

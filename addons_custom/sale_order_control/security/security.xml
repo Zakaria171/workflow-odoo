@@ -1,5 +1,0 @@
-<odoo>
-    <record id="group_sale_order_promotion_manager" model="res.groups">
-        <field name="name">Sale Order Promotion Manager</field>
-    </record>
-</odoo>
